@@ -1,7 +1,7 @@
 <!--
  * @Author: 桔子桑
  * @Date: 2019-10-14 13:26:44
- * @FilePath: /deno-vue/index.html
+ * @FilePath: /deno-test/index.html
  * @Description: 
  -->
 <!DOCTYPE html>
@@ -9,13 +9,35 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>3D-EDIT</title>
+    <title>deno</title>
   </head>
   <body>
-    <div id="app"></div>
+    <div id="root"></div>
     <!-- built files will be auto injected -->
+
+    <script src="https://cdn.bootcss.com/react/16.8.6/umd/react.development.js"></script>
+
+<script src="https://cdn.bootcss.com/react-dom/16.8.6/umd/react-dom.development.js"></script>
+
+<script src="https://cdn.bootcss.com/babel-standalone/6.26.0/babel.js"></script>
     
-    <script type="module" src="./index.js"></script>
+    <script type="text/javascript" src="build/index.js">
+            // ReactDOM.render(
+            //   <React.Fragment>
+            //     <div>main</div>
+            //   </React.Fragment>,
+            //   document.getElementById('root')
+            // );
+    </script>
+
+<!-- <script type="text/babel">
+  ReactDOM.render(
+    <React.Fragment>
+      <div>main</div>
+    </React.Fragment>,
+    document.getElementById('root')
+  );
+</script> -->
   </body>
   
 
