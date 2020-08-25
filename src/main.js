@@ -6,18 +6,16 @@
 # Description: 
 #
 ============================================================================= */
+import app from './app.ts'
 
-import React from '../static/lib/react.js';
-// const React = React1;
-import ReactDOM from '../static/lib/reactDom.js';
+document.body.style.cssText = `
+background:red
+`
 
-import Index from './pages/Index';
-
-
-ReactDOM.render(
-  <React.Fragment>
-    <Index />
-  </React.Fragment>,
-  document.getElementById('root')
-);
-
+app.init();
+app.initModel();
+function animate(){
+    app.animate();
+    requestAnimationFrame(animate);
+}
+animate();
